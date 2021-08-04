@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="application/javascript" href="">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="frame">
+
+
+
+    <div class="title">SPLI<br>TTER</div>
+    <div class="container">
+      <div class="entire-container-left">
+        <div class="bill-contain">
+          <p>Bill</p>
+          <label>
+            <input id="dollar-text-id" class="dollar-text" type="number" placeholder="bill">
+          </label>
+        </div>
+        <div class="button-contain">
+          <p>Select Tip%</p>
+          <div class="only-button">
+            <input id="change-color-1" type="button" value="5%"  class="dark-button" onclick="button_click_dark(5);   setColor('change-color-1');">
+            <input id="change-color-2" type="button" value="10%" class="dark-button" onclick="button_click_dark(10);  setColor('change-color-2');">
+            <input id="change-color-3" type="button" value="15%" class="dark-button" onclick="button_click_dark(15);  setColor('change-color-3');">
+            <input id="change-color-4" type="button" value="25%" class="dark-button" onclick="button_click_dark(25);  setColor('change-color-4');">
+            <input id="change-color-5" type="button" value="50%" class="dark-button" onclick="button_click_dark(50);  setColor('change-color-5');">
+            <input id="change-color-6" type="number" placeholder="Custom" class="white-button" onclick="setColor('change-color-6');">
+          </div>
+        </div>
+        
+        <div class="people-contain bill-contain">
+          <p>Number of People <span class="cant-zero"></span></p> 
+          <label>
+            <input id="people-text-id" class="people-text dollar-text" type="number" placeholder="Number of People">
+          </label>
+        </div>
+
+
+      </div>
+
+
+      <div class="entire-container-right">
+        <div class="only-text">
+          <div class="super size">
+            Tip Amount
+            <div class="sub">/ person</div>
+          </div>
+          <div id="tip-amount-id" class="tip-amount-dollar size super">
+            $0.00
+
+          </div>
+          <div class="super size down">
+            Total
+            <div class="sub">/ person</div>
+          </div>
+          <div id="total-amount-id" class="total-dollar size down super">
+            $00.00
+          </div>
+        </div>
+
+        <div class="only-button-right">
+          <input type="button" value="RESET" onclick="reseting()">
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- 
+  Bill
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="../tip-calculator-app-main/js/script.js"></script>
+
+</body>
+
+</html>
